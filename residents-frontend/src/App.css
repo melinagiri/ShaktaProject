@@ -1,0 +1,103 @@
+/* General Container (A4-like layout) */
+.container {
+    width: 21cm; /* A4 width */
+    height: 29.7cm; /* A4 height */
+    padding: 30mm; /* Applying margin-like padding */
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centers the content horizontally and applies space on top/bottom */
+    overflow: auto; /* Ensures that content does not overflow out of container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form Section */
+.form-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 30px;
+}
+
+/* Section Title */
+h3, h2, h1{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Input and Button Style */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    form input, form button {
+        margin: 10px;
+        padding: 12px 15px;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        font-size: 14px;
+        background-color: #f9f9f9;
+    }
+
+/* Table Section */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+    table th, table td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+
+    table th {
+        background-color: #4CAF50;
+        color: white;
+    }
+
+/* Chart Section */
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Pie Chart and Bar Chart */
+.pie-chart, .bar-chart {
+    width: 48%;
+}
+
+
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 50%;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+    .search-input:focus {
+        border-color: #4CAF50;
+        outline: none;
+    }
